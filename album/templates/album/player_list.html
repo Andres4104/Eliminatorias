@@ -1,1 +1,11 @@
-<h1>{{object_list}} </h1>
+<h1>Eliminatorias mundial 2026</h1>
+
+<h2>Players</h2>
+
+<div>
+    {% for c in object_list %}
+        <a href="{% url 'player-detail' c.pk %}">
+            {{ c.first_name }} {{ c.last_name }} <br>
+        </a>
+    {% endfor %}
+</div>
