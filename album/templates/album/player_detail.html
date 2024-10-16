@@ -11,6 +11,8 @@
            </a> )
        {% endif %}
     </h2>
+    <p><strong>Estatura: </strong>{{ object.height }} m</p>
+    <p><strong>Peso: </strong>{{ object.weight }} kg</p> 
     <p><strong>comments: </strong>{{ object.comment|default:"no comments" }}</p>
    <hr>
 {% endblock section %}
