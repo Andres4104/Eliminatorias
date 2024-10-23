@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 
 from album.models import Team, Player
 
@@ -16,3 +16,11 @@ class TeamListView(ListView):
 
 class PlayerListView(ListView):
     model = Player
+
+class TeamCreate(CreateView):
+    model = Team
+    fields = '__all__'
+
+class PlayerCreate(CreateView):
+    model = Player
+    fields = '__all__'
