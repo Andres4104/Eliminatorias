@@ -3,6 +3,8 @@
 {% load static %}
 
 {% block section %}
+    <a href="{% url 'team-update' object.id%}"> Edit </a>
+
    <h2>
        {{ object.first_name }} {{ object.last_name }}
        {% if object.team_id %}

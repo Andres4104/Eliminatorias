@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+
+<form action="" method="post"> {% csrf_token %}
+    <p> Está seguro de eliminar el equipo: {{ object.name }} ?</p>
+    <input type="sumbit" value="Confirm" />
+    <a href="{% url "team-list" %}">Cancel </a>
+</form>
+
+{% endblock maincontent %}
