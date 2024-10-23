@@ -4,6 +4,7 @@
 
 {% block section %}
     <a href="{% url 'team-update' object.id%}"> Edit </a>
+    <a href="{% url 'team-delete' object.id%}"> Delete </a>
 
    <h2>
        {{ object.first_name }} {{ object.last_name }}

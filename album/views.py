@@ -39,5 +39,5 @@ class TeamDelete(DeleteView):
     success_url = reverse_lazy('team-list')
 
 class PlayerDelete(DeleteView):
-    model = Team
+    model = Player
     success_url = reverse_lazy('player-list')
